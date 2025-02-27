@@ -1,0 +1,36 @@
+.header {
+    background-color: #192d63;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navItem a {
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navItem a:hover {
+    color: #ffcc00;
+}

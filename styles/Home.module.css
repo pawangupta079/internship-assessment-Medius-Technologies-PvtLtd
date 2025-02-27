@@ -1,0 +1,150 @@
+.header {
+  background-color: #275583;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px 0;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews, .products, .resources, .company, .contact {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h2, .products h2, .resources h2, .company h2, .contact h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.reviews p, .products ul, .resources ul, .company ul, .contact p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.reviews a {
+  display: block;
+  color: #0070f3;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.reviews a:hover {
+  color: #005bb5;
+}
+
+.products ul, .resources ul, .company ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.products li, .resources li, .company li {
+  margin-bottom: 10px;
+}
+
+.products li::before, .resources li::before, .company li::before {
+  content: '•';
+  color: #0070f3;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav ul {
+    text-align: center;
+  }
+
+  .nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reviews, .products, .resources, .company, .contact {
+    padding: 15px;
+  }
+}
